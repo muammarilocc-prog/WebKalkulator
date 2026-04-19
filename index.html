@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kalkulator & Muammar AI</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="title">✨ Kalkulator & Muammar AI ✨</h1>
+
+<div class="container">
+
+  <!-- KALKULATOR -->
+  <div class="calculator glass">
+    <h3>🧮 Kalkulator</h3>
+    <input type="text" id="calcDisplay" placeholder="0">
+
+    <div class="buttons">
+      <button onclick="clearCalc()">AC</button>
+      <button onclick="deleteCalc()">⌫</button>
+      <button onclick="appendCalc('/')">÷</button>
+      <button onclick="appendCalc('*')">×</button>
+
+      <button onclick="appendCalc('7')">7</button>
+      <button onclick="appendCalc('8')">8</button>
+      <button onclick="appendCalc('9')">9</button>
+      <button onclick="appendCalc('-')">−</button>
+
+      <button onclick="appendCalc('4')">4</button>
+      <button onclick="appendCalc('5')">5</button>
+      <button onclick="appendCalc('6')">6</button>
+      <button onclick="appendCalc('+')">+</button>
+
+      <button onclick="appendCalc('1')">1</button>
+      <button onclick="appendCalc('2')">2</button>
+      <button onclick="appendCalc('3')">3</button>
+      <button onclick="calculateCalc()">=</button>
+
+      <button onclick="appendCalc('0')">0</button>
+      <button onclick="appendCalc('.')">.</button>
+    </div>
+  </div>
+
+  <!-- CHAT -->
+  <div class="chatbox glass">
+    <h3>🤖 Muammar AI</h3>
+
+    <div id="chatArea"></div>
+
+    <input type="text" id="chatInput" placeholder="Tanya sesuatu...">
+    <button onclick="sendChat()" class="sendBtn">Kirim</button>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
